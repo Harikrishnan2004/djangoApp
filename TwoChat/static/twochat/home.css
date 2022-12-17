@@ -1,0 +1,42 @@
+#formid{
+    border-radius: 10em;
+    padding: 0.4em;
+    border-color:rgb(255, 148, 127)
+}
+#formname{
+    border-radius: 10em;
+    padding: 0.4em;
+    border-color:rgb(255, 148, 127)
+}
+#title{
+    font-family:cursive;
+    font-size: 5em;
+}
+body{
+    background-image: url("./background_chat_program.jpg")
+}
+#layout{    
+    text-align:center;
+    background: linear-gradient(to right, rgba(255, 122, 89, 1), rgb(255, 255, 255));
+    justify-content: center;
+    margin-top: 5em;
+    margin-left: 15em;
+    margin-right: 15em;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
+#submit{
+    margin: 1em;
+}
+
+#roomsubmit{
+    padding: 0.5em;
+    border-radius: 1.5em;
+    border-color: aliceblue;
+}
+#roomsubmit:hover{
+    padding: 0.5em;
+    border-radius: 1.5em;
+    border-color:aqua;
+}

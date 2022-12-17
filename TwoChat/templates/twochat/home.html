@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <link href = "{% static 'twochat/home.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="layout">
+        <div>
+            <h1 id="title">Two Chat</h1>
+            <h3 id="roomid">Room id {{ id }}</h3>
+            <form action = "{% url 'twochat:home' %}" method = 'post' id='roomform'>
+                {% csrf_token %}
+                {{ form }}
+                <div id = "submit"><input type="submit" value="send" id="roomsubmit"></div>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

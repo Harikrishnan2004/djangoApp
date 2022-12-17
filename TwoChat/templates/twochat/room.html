@@ -1,0 +1,30 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <link href="{% static 'twochat/room.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <div><h1 id="roomid">Room id {{ id }}</h1></div>
+            <div><p id="myname"> My Name : {{ me }}</p1></div>
+            <div><p id="partnername"> Partner Name : {{ part }}</p1></div>
+            <div id="chats">
+                {% for chat in chats %}
+                    {% if chat.0 == me %}
+                        <p class = "chatleft">{{ chat.1 }}</p>
+                    {% else %}
+                        <p class = "chatright">{{ chat.1 }}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div id="form">
+            <form action = "{% url 'twochat:room' %}" method = 'post'>
+                {%csrf_token%}
+                {{ chat_form }}
+                <input type = "submit" id="submit" value="send">
+            </div>
+        </div>
+    </body>
+</html>

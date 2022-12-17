@@ -1,0 +1,51 @@
+body{
+    background-image: url("./background_chat_program.jpg");
+    text-align: center;
+    margin-top: 5em;
+}
+#content{
+    text-align: center;
+    background: linear-gradient(to right, rgb(155, 255, 89), rgb(255, 255, 255));
+    display: absolute;
+    justify-content: center;
+    margin-top: 5em;
+    margin-left: 15em;
+    margin-right: 15em;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+.chatleft{
+    background-color: aliceblue;
+    text-align: left;
+    margin-left: 5em;
+    margin-right: 40em;
+    padding: 1em;
+    border-radius: 1em;
+}
+.chatright{
+    background-color: rgb(140, 241, 140);
+    text-align: left;
+    margin-left: 40em;
+    margin-right: 5em;
+    padding: 1em;
+    border-radius: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+#formchat{
+    margin-top: 3em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    width: 30em;
+}
+
+#submit{
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+#submit:hover{
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: black;
+    color: aliceblue;
+    border-color: aliceblue;
+}
